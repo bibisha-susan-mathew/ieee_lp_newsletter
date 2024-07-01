@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IEEE LaunchPad 2024</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM3yYk5YFB4Z3vu6i/u/4TZR9r+PYUBGFaWqUIX" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 20px;
+            background-color: black;
+            color: white;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .icons-container {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            max-width: 600px;
+            margin-bottom: 20px;
+        }
+
+        .icon {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        .icon i {
+            font-size: 50px;
+            margin-bottom: 10px;
+            color: orange;
+        }
+
+        .icon p {
+            margin: 0;
+        }
+
+        .content-section {
+            width: 100%;
+            max-width: 600px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .footer a {
+            color: orange;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .icons-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .icon {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>IEEE LaunchPad 2024</h1>
+    </div>
+
+    <div class="icons-container">
+        <div class="icon" id="introduction">
+            <i class="fas fa-info-circle"></i>
+            <p>Introduction</p>
+        </div>
+        <div class="icon" id="call-to-action">
+            <i class="fas fa-bullhorn"></i>
+            <p>Call to Action</p>
+        </div>
+        <div class="icon" id="latest-updates">
+            <i class="fas fa-bell"></i>
+            <p>Latest Updates</p>
+        </div>
+        <div class="icon" id="event-roadmap">
+            <i class="fas fa-road"></i>
+            <p>Event Roadmap</p>
+        </div>
+    </div>
+
+    <div class="content-section" id="content">
+        <!-- Content will be dynamically loaded here -->
+    </div>
+
+    <div class="footer">
+        <p>For more information, visit <a href="http://www.launchpadkerala.org" target="_blank">www.launchpadkerala.org</a></p>
+    </div>
+
+    <script>
+        document.getElementById('introduction').onclick = function() {
+            document.getElementById('content').innerHTML = `
+                <h2>Introducing Launchpad Kerala 2024: A Premier Job Fair for Engineering Excellence </h2>
+                <p>
+One of the most prestigious events organized by the IEEE Kerala Section and GTech MuLearn: Launchpad Kerala 2024. This premier job fair is dedicated to creating unparalleled opportunities for engineering students and graduates, bringing together the brightest talents and the most innovative companies in the technical and engineering fields.
+Launchpad Kerala 2024 is more than just a job fair; it's a hub of advancement and innovation. By fostering a seamless exchange of ideas and expertise, this collaboration aims to revolutionize Kerala's employment landscape. Whether you're a budding engineer, this event is designed to propel your career forward and connect you with the forefront of technological progress.
+Join Launchpad Kerala 2024 and be part of a transformative experience that bridges the gap between talent and opportunity, paving the way for a brighter future in engineering and technology.</p>
+            `;
+        }
+
+        document.getElementById('call-to-action').onclick = function() {
+            document.getElementById('content').innerHTML = `
+                <h2>Call to Action</h2>
+                <p>I invite you to join IEEE LaunchPad Kerala! Participate in the events, contribute your ideas, and create a vibrant tech community. Together, we can make a difference!</p>
+            `;
+        }
+
+        document.getElementById('latest-updates').onclick = function() {
+            document.getElementById('content').innerHTML = `
+                <h2>Latest Updates</h2>
+                <p>Stay tuned for the latest updates from IEEE LaunchPad Kerala.</p>
+            `;
+        }
+
+        document.getElementById('event-roadmap').onclick = function() {
+            document.getElementById('content').innerHTML = `
+                <h2>Event Roadmap</h2>
+                <p>
+<h3>Launchpad Kerala 2024: Event Roadmap </h3>
+<br> <h4> Step 1: Register Online </h4>
+Complete your registration on the Launchpad Kerala 2024 website.
+
+<br> <h4> Step 2: Confirmation </h4>
+Receive a confirmation email within 48 hours with next steps and updates on the event website.
+
+<br> <h4> Step 3: Join the Community </h4>
+Join the GTech MuLearn Discord Server and complete the Launchpad Challenges. 
+
+<br> <h4> Step 4: Technical Challenge </h4>
+Participate in tasks on the Discord server, earn Karma points, and join daily office hours from 8:00 PM to 9:00 PM. Track your progress on the leaderboard.
+
+<br> <h4> Step 5: Online Aptitude Test </h4>
+Showcase your skills in the online assessment. 
+
+<br> <h4> Step 6: Await Results </h4>
+Results will be announced based on your performance.
+
+<br> <h4> Step 7: Final Interview </h4>
+Prepare for the final interview to secure your dream job.
+</p>
+            `;
+        }
+    </script>
+</body>
+</html>
